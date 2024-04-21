@@ -6,7 +6,7 @@ import { IoCloseSharp } from "react-icons/io5";
 const Header = () => {
   return (
     <nav className="">
-      <div className="p-5  bg-slate-400 flex items-center justify-between font-mono">
+      <div className="p-5  bg-slate-400 flex items-center justify-between font-mono fixed top-0 w-full bg-opacity-95">
         <Link to="/" className="text-2xl ml-12">
           MY BLOG
         </Link>
