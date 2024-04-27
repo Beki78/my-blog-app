@@ -3,14 +3,18 @@ import { Link } from "react-router-dom";
 import PostAuthor from "./PostAuthor";
 
 const Postitem = ({ postID, category, thumbnail, title, desc, authorID }) => {
+    const shortDescription = desc.length > 150 ? desc.substring(0, 150) + "..." : desc;
+    const postTitle = title.length > 30 ? title.substring(0, 30) + "..." : title;
+
+
   return (
     <div>
       <article className="border-solid border-2 border-gray-400 rounded-lg bg-slate-400 p-2 shadow-md shadow-slate-700">
         <img className="" src={thumbnail} alt={title} />
         <Link to={`/posts/${postID}`}>
-          <h3 className="font-bold text-xl">{title}</h3>
+          <h3 className="font-bold text-xl">{postTitle}</h3>
         </Link>
-        <p className="pt-4">{desc}</p>
+        <p className="pt-4">{shortDescription}</p>
         <div className="">
           <PostAuthor />
           <Link

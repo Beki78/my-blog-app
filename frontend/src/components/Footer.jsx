@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <footer>
-      <ul className='bg-slate-900 text-white font-light text-sm p-6 pb-4 grid grid-cols-8 pl-12  gap-0  w-screen'>
+      <ul className='bg-slate-900 text-white font-light text-sm p-6 pb-4 grid lg:grid-cols-8 justify-center md:grid-cols-6 sm:grid-cols-4 pl-12  gap-0  w-screen'>
         <li className='inline bg-slate-800 p-1 rounded mx-auto hover:bg-slate-600 pl-4 pr-4'><Link to="posts/categories/Agriculture">Agriculture</Link></li>
         <li className='inline bg-slate-800 p-1 rounded mx-auto hover:bg-slate-600 pl-4 pr-4'><Link to="posts/categories/Business">Business</Link></li>
         <li className='inline bg-slate-800 p-1 rounded mx-auto hover:bg-slate-600 pl-4 pr-4'><Link to="posts/categories/Education">Education</Link></li>

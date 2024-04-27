@@ -16,6 +16,7 @@ import CreatePosts from "./pages/CreatePosts.jsx";
 import CategoryPosts from "./pages/CategoryPosts.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import EditPost from "./pages/EditPost.jsx";
+import Delete from './pages/Delete.jsx';
 
 
 
@@ -31,12 +32,13 @@ const router = createBrowserRouter([
       { path: "login", element: <LoginPage /> },
       { path: "profile/:id", element: <UserProfile /> },
       { path: "authors", element: <Authors /> },
-      { path: "posts/user/:id", element: <AuthorPosts /> },
+      { path: "posts/users/:id", element: <AuthorPosts /> },
       { path: "create", element: <CreatePosts /> },
       { path: "posts/categories/:category", element: <CategoryPosts /> },
       { path: "myposts/:id", element: <Dashboard /> },
       { path: "posts/:id/edit", element: <EditPost /> },
       { path: "logout", element: <LogoutPage /> },
+      { path: "posts/:id/delete", element: <Delete /> },
     ],
   },
 ]);

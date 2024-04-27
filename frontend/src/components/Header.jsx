@@ -12,7 +12,7 @@ const Header = () => {
         </Link>
         <ul className="flex content-center font-mono  lg:gap-16 md:gap-12  ">
           <li className="hover:text-gray-600">
-            <Link to="/profile">Bereket Getachew</Link>
+            <Link to="/profile/asdji">Bereket Getachew</Link>
           </li>
           <li className="hover:text-gray-600">
             <Link to="/create">Create post</Link>
